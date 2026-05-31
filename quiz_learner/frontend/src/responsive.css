@@ -1,0 +1,150 @@
+/* ─── Quiz Learner — Global Responsive CSS ───────────────────────────────── */
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* Prevent iOS input zoom */
+@media (max-width: 768px) {
+
+    input,
+    select,
+    textarea {
+        font-size: 16px !important;
+    }
+
+    /* Reduce page padding */
+    .page-wrap {
+        padding: 1rem !important;
+    }
+
+    /* Tables scroll horizontally */
+    .table-scroll {
+        overflow-x: auto;
+    }
+
+    /* Stack flex rows */
+    .mobile-stack {
+        flex-direction: column !important;
+    }
+}
+
+/* ── Landing page ── */
+@media (max-width: 768px) {
+
+    /* Hero */
+    [style*="padding: '5rem 4rem'"],
+    [style*='padding: "5rem 4rem"'] {
+        padding: 2rem 1rem !important;
+        min-height: auto !important;
+    }
+
+    /* Hero illustration hide */
+    [style*="fontSize: '10rem'"] {
+        display: none !important;
+    }
+
+    /* Feature grid */
+    [style*="minmax(240px, 1fr)"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* CTA section */
+    [style*="padding: '5rem 4rem'"][style*="textAlign: 'center'"] {
+        padding: 2rem 1rem !important;
+    }
+}
+
+/* ── Dashboard pages ── */
+@media (max-width: 768px) {
+
+    /* Stats grid — 2 columns on mobile */
+    [style*="minmax(180px, 1fr)"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    /* Quiz/challenge grid — 1 column */
+    [style*="minmax(300px, 1fr)"],
+    [style*="minmax(260px, 1fr)"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Form grids — 1 column */
+    [style*="minmax(200px, 1fr)"],
+    [style*="minmax(220px, 1fr)"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Page padding */
+    [style*="padding: '2rem 3rem'"],
+    [style*="padding: '1.5rem 2rem'"] {
+        padding: 1rem !important;
+    }
+}
+
+/* ── Attempt Quiz ── */
+@media (max-width: 640px) {
+
+    /* Options grid — 1 column */
+    [style*="gridTemplateColumns: '1fr 1fr'"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Score big */
+    [style*="fontSize: '4rem'"][style*="fontWeight: 800"] {
+        font-size: 2.5rem !important;
+    }
+}
+
+/* ── Coding Editor — stack on mobile ── */
+@media (max-width: 900px) {
+    [style*="height: 'calc(100vh - 200px)'"] {
+        height: 50vh !important;
+    }
+}
+
+/* ── Tables ── */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.78rem;
+        min-width: 500px;
+    }
+
+    [style*="overflowX: 'auto'"],
+    [style*="overflow-x: auto"] {
+        overflow-x: auto !important;
+    }
+}
+
+/* ── Login card ── */
+@media (max-width: 480px) {
+
+    [style*="maxWidth: 440"],
+    [style*="maxWidth: 420"] {
+        padding: 1.5rem 1rem !important;
+        margin: 0.5rem !important;
+    }
+}
+
+/* ── Result page ── */
+@media (max-width: 640px) {
+    [style*="padding: '3rem'"][style*="textAlign: 'center'"] {
+        padding: 1.5rem 1rem !important;
+    }
+}
+
+/* ── Timetable ── */
+@media (max-width: 640px) {
+    [style*="minmax(240px, 1fr)"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ── Action buttons ── */
+@media (max-width: 640px) {
+    [style*="display: 'flex'"][style*="gap: '1rem'"][style*="marginBottom"] {
+        flex-wrap: wrap !important;
+    }
+}

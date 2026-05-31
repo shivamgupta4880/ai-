@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+quiz_learner/node_modules/
+quiz_learner/backend/node_modules/
+quiz_learner/frontend/node_modules/
+
+# Environment files
+.env
+quiz_learner/.env
+quiz_learner/backend/.env
+quiz_learner/frontend/.env
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
